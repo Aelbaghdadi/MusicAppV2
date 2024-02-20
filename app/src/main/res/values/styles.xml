@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>
+    <style name="SpinnerMode" parent="android:Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:calendarViewShown">false</item>
+    </style>
+
+    <style name="datepicker_dark">
+        <item name="android:datePickerStyle">@style/SpinnerMode</item>
+        <!-- Text color -->
+        <item name="android:textColorPrimary">@color/rosa</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="Theme.Ex.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="Widget.ActionMode" parent="@android:style/Widget.Holo.ActionMode">
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.SongsListFragment"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:orientation="horizontal"
+            android:background="#EE96B4"
+            android:padding="5dp">
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/imgAlbum"
+                android:src="@drawable/am"
+                app:shapeAppearanceOverlay="@style/circleImageView"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:text="Arctic Monkeys"
+                    android:id="@+id/artistName"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:text="AM"
+                    android:id="@+id/albmTitle"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcySongs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.8">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/add"
+        android:backgroundTint="@color/rosa"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="bottom|end"/>
+
+</LinearLayout>

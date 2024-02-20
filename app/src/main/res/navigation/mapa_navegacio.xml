@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapa_navegacio"
+    app:startDestination="@id/nav_my_music">
+
+    <fragment
+        android:id="@+id/nav_my_music"
+        android:name="org.milaifontanals.musicappv2.view.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_crearAlbumFragment"
+            app:destination="@id/crearAlbumFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_songsListFragment"
+            app:destination="@id/songsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/crearAlbumFragment"
+        android:name="org.milaifontanals.musicappv2.view.CrearAlbumFragment"
+        android:label="Create Album"
+        tools:layout="@layout/fragment_crear_album" />
+    <fragment
+        android:id="@+id/songsListFragment"
+        android:name="org.milaifontanals.musicappv2.view.SongsListFragment"
+        android:label="Songs List"
+        tools:layout="@layout/fragment_songs_list" />
+    <fragment
+        android:id="@+id/nav_download"
+        android:name="org.milaifontanals.musicappv2.view.DownloadFragment"
+        android:label="Download Music"
+        tools:layout="@layout/fragment_download" />
+</navigation>
